@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>css简单的轮播</title>
+    <style>
+        div {
+            width: 200px;
+            height: 300px;
+            background-color: antiquewhite;
+        }
+
+        img {
+            width: 140px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <center>跑马灯</center>
+        <marquee direction="left" scrollamount="145px" scrolldelay="1000" behavior="alternate" onmouseover="this.stop()"
+            onmouseout="this.start()" hspace="30px" vspace="50px">
+            <img src="../0121多媒体/111.jpg" />
+            <img src="../0121多媒体/222.jpg" />
+            <img src="../0121多媒体/333.jpg" />
+            <!--
+                 	loop="3" 滚动次数
+                 	direction="down" 滚动方向
+                 	scrollamount="200px" 每次滚动移动的px
+                 	scrolldelay="100" 多少秒滚动一次
+                 	behavior="alternate" 来回滚动（怎么滚动）
+                 	onmouseover="this.stop()" 鼠标一进去就停止
+                 	onmouseout="this.start()" 鼠标出来就开始
+                 	hspace
+                 	vspace
+                 	描述：
+                 	
+                 -->
+        </marquee>
+    </div>
+</body>
+
+</html>
+————————————————
+版权声明：本文为CSDN博主「糟糕透了的都精彩极了」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_42902470/article/details/86593046
